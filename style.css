@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* header */
+header {
+  text-align: center;
+  margin-top: 2rem;
+  display: grid;
+  justify-content: center;
+}
+.nav {
+  margin: 1rem;
+}
+section {
+  margin: 3rem auto;
+  display: grid;
+  place-items: center;
+  max-width: 95vw;
+  width: 95vw;
+}
+/* img */
+img {
+  display: block;
+  object-fit: cover;
+  width: 500px;
+  height: 300px;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  display: none;
+  padding: 2rem;
+}
+
+.open {
+  display: block;
+  background-color: rgb(226, 226, 226);
+}
+
+.all-cards .btns {
+  display: flex;
+
+  max-width: 1170px;
+}
+
+h4 {
+  font-size: 2rem;
+}
+ul {
+  list-style: none;
+}
+/*bTN  */
+
+.btn {
+  cursor: pointer;
+  border: transparent;
+  height: 50px;
+  width: 200px;
+}
+@media screen and (min-width: 1000px) {
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    /* width: 90vw; */
+  }
+}
